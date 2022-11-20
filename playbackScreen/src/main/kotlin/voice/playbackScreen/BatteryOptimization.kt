@@ -11,8 +11,6 @@ class BatteryOptimization
 ) {
 
   fun isIgnoringBatteryOptimizations(): Boolean {
-    val powerManager = context.getSystemService<PowerManager>()
-      ?: return true
-    return powerManager.isIgnoringBatteryOptimizations(context.packageName)
+    return true
   }
 }
