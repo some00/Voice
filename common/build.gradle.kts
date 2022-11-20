@@ -21,6 +21,7 @@ dependencies {
   implementation(libs.androidxCore)
   implementation(libs.viewBinding)
   implementation(libs.serialization.json)
+  implementation(libs.base64decoder)
 
   testImplementation(libs.junit)
   testImplementation(libs.androidX.test.core)

@@ -3,7 +3,7 @@ versionCode = "3603002"
 versionName = "6.4.1"
 
 sdk-compile = "33"
-sdk-min = "26"
+sdk-min = "22"
 sdk-target = "30"
 
 coroutines = "1.6.4"
@@ -23,7 +23,8 @@ androidPluginForGradle = { module = "com.android.tools.build:gradle", version.re
 material = "com.google.android.material:material:1.7.0"
 materialCab = "com.afollestad:material-cab:2.0.1"
 lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
-ffmpeg = "com.arthenica:ffmpeg-kit-audio:5.1"
+ffmpeg = "com.arthenica:ffmpeg-kit-audio:5.1.LTS"
+base64decoder = "biz.source_code:base64coder:2010-12-19"
 junit = "junit:junit:4.13.2"
 mockk = "io.mockk:mockk:1.13.2"
 robolectric = "org.robolectric:robolectric:4.9"
