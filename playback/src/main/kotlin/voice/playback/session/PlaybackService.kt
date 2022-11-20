@@ -220,6 +220,7 @@ class PlaybackService : MediaBrowserServiceCompat() {
     super.onDestroy()
   }
 
+  @Suppress("DEPRECATION")
   private suspend fun updateNotification(state: PlaybackStateCompat) {
     val updatedState = state.state
 
@@ -255,7 +256,7 @@ class PlaybackService : MediaBrowserServiceCompat() {
       }
       else -> {
         if (isForeground) {
-          stopForeground(STOP_FOREGROUND_DETACH)
+          stopForeground(true)
           isForeground = false
 
           if (updatedState == PlaybackStateCompat.STATE_NONE) {
