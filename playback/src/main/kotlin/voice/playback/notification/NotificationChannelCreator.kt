@@ -18,22 +18,6 @@ class NotificationChannelCreator
   private val context: Context,
 ) {
 
-  private var created = AtomicBoolean()
-
   fun createChannel() {
-    if (created.getAndSet(true)) {
-      return
-    }
-
-    val name = context.getString(R.string.music_notification)
-    val channel = NotificationChannel(
-      MUSIC_CHANNEL_ID,
-      name,
-      NotificationManager.IMPORTANCE_LOW,
-    ).apply {
-      lockscreenVisibility = Notification.VISIBILITY_PUBLIC
-      setShowBadge(false)
-    }
-    notificationManager.createNotificationChannel(channel)
   }
 }
